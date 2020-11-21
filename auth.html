@@ -11,10 +11,36 @@
         <script src="js/auth.js"></script>
     </head>
     <body>
-        <form id="login_form" accept-charset="UTF-8" autocomplete=on name="form" action="http://localhost:8000/login" method="post">
-            <input type="text" name="username" placeholder="Username">
-            <input type="password" name="password" placeholder="Password">
-            <input type="submit" value="Log In">
-        </form>
+        <!--This is the header-->
+        <header class="row"></header>
+        <!--This is the main container-->
+        <main class="row">
+            <div class="col-4 col-s-2 col-p-1"></div>
+            <div id="wrapper" class="col-4 col-s-8 col-p-10">
+                <div id="form_header" class="col-12 col-s-12">
+                    <div class="col-3 col-s-3 col-p-3 register_disappear"></div>
+                    <img class="col-6 col-s-6 col-p-6" src="images/logo.png" alt="logo"/>
+                    <div class="col-3 col-s-3 col-p-3 register_disappear"></div>
+                </div>
+                <div class="col-12 col-s-12">
+                    <h2 class="register_disappear">Inicia sesión</h2>
+                    <h5 class="register_disappear">Para acceder al control de sensores de Securitas Direct</h5>
+                    <form id="login_form" class="col-12 col-s-12" accept-charset="UTF-8" autocomplete=on name="form" action="http://localhost:8000/login" method="post">
+                        <input type="text" class="col-12 col-s-12" name="username" placeholder="Nombre de usuario" required>
+                        <input type="password" class="col-12 col-s-12" name="password" placeholder="Contraseña" required>
+                        <div class="col-4 col-s-4 phone-disabled"></div>
+                        <input id="login_button" class="col-4 col-s-4" type="submit" value="Iniciar sesión">
+                        <div class="col-4 col-s-4 phone-disabled"></div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-4 col-s-2 col-p-1"></div>
+        </main>
+		<!--This is the footer-->
+		<footer class="row">
+			<p>Página desarrollada por Cookie Monsters</p>
+		</footer>
+
+        
     </body>
 </html>
