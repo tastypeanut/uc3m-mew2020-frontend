@@ -4,7 +4,7 @@ if (getCookie('sessionID') == null) {
 
 $(document).ready(
     function(){
-        var GETrequestJSON = JSON.parse(httpGet("http://localhost:8000/events"));
+        var GETrequestJSON = JSON.parse(httpGet("http://localhost:8000/getIncidents"));
 
     }
 );
