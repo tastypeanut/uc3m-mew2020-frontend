@@ -5,7 +5,9 @@ if (getCookie('sessionID') == null) {
 $(document).ready(
     function(){
         var GETrequestJSON = JSON.parse(httpGet("http://localhost:8000/getIncidents"));
-
+        GETrequestJSON.forEach(incident => {
+            consolo.log("XDDD")
+        })
     }
 );
 
